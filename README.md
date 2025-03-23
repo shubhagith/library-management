@@ -20,6 +20,9 @@ cd library-management
 ```sh
 python -m venv venv  # Create Virtual Environment
 
+#Powershell Exclusion Policy:
+Set-ExecutionPolicy Unrestricted -Scope Process
+
 # Activate:
 # Windows:
 venv\Scripts\activate
