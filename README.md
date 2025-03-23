@@ -18,16 +18,16 @@ cd library_management
 
 ### 2️⃣ **Create Virtual Environment & Activate**
 ```sh
-python -m venv venv  # Create Virtual Environment
+python -m venv libenv  # Create Virtual Environment
 
 #Powershell Exclusion Policy:
 Set-ExecutionPolicy Unrestricted -Scope Process
 
 # Activate:
 # Windows:
-venv\Scripts\activate
+libenv\Scripts\activate
 # macOS/Linux:
-source venv/bin/activate
+source libenv/bin/activate
 ```
 
 ### 3️⃣ **Install Dependencies**
@@ -49,6 +49,7 @@ DB_PORT=3306  # 1433 for SQL Server
 #### **For MySQL:**
 ```sh
 python create_db.py  # Ensures DB & user exist
+python manage.py makemigrations users books # Make migrations
 python manage.py migrate  # Apply migrations
 
 ---
