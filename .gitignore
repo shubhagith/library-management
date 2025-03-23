@@ -1,7 +1,7 @@
 venv/
-libraryenv/
+libenv/
 *.pyc
 __pycache__/
-.env
+*.sqlite3
 db.sqlite3
 errors.log

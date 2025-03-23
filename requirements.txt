@@ -2,5 +2,7 @@ Django>=4.0
 djangorestframework>=3.15
 django-environ  # For environment variable management
 mysqlclient  # MySQL support
-django-mssql-backend  # SQL Server support
+mssql-django  # SQL Server support
 pyodbc  # Required for SQL Server ODBC Driver
+pytest
+python-dotenv
