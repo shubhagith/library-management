@@ -13,7 +13,7 @@ This is a **Library Management System** built using **Django & Django REST Frame
 ### 1️⃣ **Clone the Repository**
 ```sh
 git clone https://github.com/shubhagith/library-management.git
-cd library-management
+cd library_management
 ```
 
 ### 2️⃣ **Create Virtual Environment & Activate**
