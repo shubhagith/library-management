@@ -63,11 +63,19 @@ API available at: **`http://127.0.0.1:8000/`**
 ---
 
 ## 🔐 Authentication
-### **Create Superuser (for Django Admin Panel)**
-```sh
-python manage.py createsuperuser
-```
-Access Admin Panel: **`http://127.0.0.1:8000/admin/`**
+
+### **Django Admin Login**
+
+1. **Create a superuser** (if not already created):
+   ```sh
+   python manage.py createsuperuser
+   ```
+   Follow the prompts to enter a **username, email, and password**.
+
+2. **Access the Django Admin Panel:**
+   - Open `http://127.0.0.1:8000/admin/`
+   - Log in using the superuser credentials.
+
 
 ### **Admin Signup (API)**
 - **URL:** `/api/auth/signup/`
