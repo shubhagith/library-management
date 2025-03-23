@@ -13,18 +13,21 @@ This is a **Library Management System** built using **Django & Django REST Frame
 ### 1️⃣ **Clone the Repository**
 ```sh
 git clone https://github.com/shubhagith/library-management.git
-cd library-management
+cd library_management
 ```
 
 ### 2️⃣ **Create Virtual Environment & Activate**
 ```sh
-python -m venv venv  # Create Virtual Environment
+python -m venv libenv  # Create Virtual Environment
+
+#Powershell Exclusion Policy:
+Set-ExecutionPolicy Unrestricted -Scope Process
 
 # Activate:
 # Windows:
-venv\Scripts\activate
+libenv\Scripts\activate
 # macOS/Linux:
-source venv/bin/activate
+source libenv/bin/activate
 ```
 
 ### 3️⃣ **Install Dependencies**
@@ -46,10 +49,8 @@ DB_PORT=3306  # 1433 for SQL Server
 #### **For MySQL:**
 ```sh
 python create_db.py  # Ensures DB & user exist
+python manage.py makemigrations users books # Make migrations
 python manage.py migrate  # Apply migrations
-```
-#### **For SQL Server:**
-Ensure you have **ODBC Driver 17+** installed & update `.env` accordingly.
 
 ---
 
