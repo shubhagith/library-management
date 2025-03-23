@@ -47,9 +47,6 @@ DB_PORT=3306  # 1433 for SQL Server
 ```sh
 python create_db.py  # Ensures DB & user exist
 python manage.py migrate  # Apply migrations
-```
-#### **For SQL Server:**
-Ensure you have **ODBC Driver 17+** installed & update `.env` accordingly.
 
 ---
 
