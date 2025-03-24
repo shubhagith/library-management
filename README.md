@@ -53,9 +53,9 @@ python create_db.py  # Ensures DB & user exist
 python manage.py makemigrations users books # Make migrations
 python manage.py migrate  # Apply migrations
 
----
+```
 
-## 🚀 Running the Server
+#### 🚀 Running the Server
 ```sh
 python manage.py runserver
 ```
