@@ -49,6 +49,7 @@ DB_PORT=3306  # 1433 for SQL Server
 #### **For MySQL:**
 ```sh
 python create_db.py  # Ensures DB & user exist
+
 python manage.py makemigrations users books # Make migrations
 python manage.py migrate  # Apply migrations
 
@@ -180,14 +181,8 @@ python create_test_db.py
 ```
 
 ### **3️⃣ Run Tests Correctly**
-Before running tests, ensure Django is loaded properly:
+Run all tests, ensure Django is loaded properly:
 ```sh
 pytest --ds=library_management.settings
 ```
-
-### **4️⃣ Run All Tests**
-```sh
-pytest
 ```
-
----
